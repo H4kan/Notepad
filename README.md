@@ -10,4 +10,6 @@ Before running, please ensure to follow these steps:
      ```
 3. **Regeneration of `development.jwt`**:
    - On each application startup, `development.jwt` will be regenerated with an admin user JWT.
+4. **Integration tests**:
+   - Covers only basic scenarios for purpose of this task.
 
