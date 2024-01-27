@@ -29,4 +29,8 @@
     <ProjectReference Include="..\Notepad.Core\Notepad.Core.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <InternalsVisibleTo Include="Notepad.Api.Integration.Test" />
+  </ItemGroup>
+
 </Project>

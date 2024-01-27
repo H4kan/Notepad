@@ -55,9 +55,11 @@ namespace Notepad.Api.Controllers
         }
 
         [HttpDelete]
-        public async Task<ActionResult<NoteResponse>> DeleteNote(DeleteNoteRequest request)
+        public async Task<ActionResult<NoteResponse>> DeleteNote(int noteId)
         {
             var username = User.FindFirst(ClaimTypes.Name)?.Value;
+
+            var request = new DeleteNoteRequest() {  NoteId = noteId };
             request.Username = username ?? string.Empty;
 
             try
